@@ -91,6 +91,12 @@ public class WebUtils extends CommonFunctions{
     public void verifyElementIsDisplayed(By loc, String msg){
         Assert.assertTrue(_driver.findElement(loc).isDisplayed(),msg+" is Displayed");
     }
+    public  void scrollToElement(By loc){
+       WebElement ele = _driver.findElement(loc);
+        JavascriptExecutor js =(JavascriptExecutor)_driver;
+        js.executeScript("arguments[0].scrollIntoView();", ele);
+
+    }
 
 
 

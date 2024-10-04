@@ -35,4 +35,19 @@ public class TestVendorLoginPage extends BaseTest {
         pm.preLoginPage().clickOnVendorLoginButton();
         pm.vendorLoginPage().verifyInValidEmail();
     }
+
+    @Test
+    public void verifyHomePageUI() {
+        pm.preLoginPage().clickOnVendorLoginButton();
+        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
+        pm.homePage().verifyPurchaseIdTxt();
+        pm.homePage().verifyPurchaseIdDescTxt();
+        pm.homePage().verifyWelcomeToMagpTxt();
+        pm.homePage().verifyLatestAnnouncementTxt();
+        pm.homePage().verifyLast7DaysTxt();
+        pm.homePage().verifyViewAll();
+
+
+    }
+
 }

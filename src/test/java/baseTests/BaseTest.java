@@ -35,13 +35,16 @@ public class BaseTest {
 
         }
     }
-    public void maximizeWindow(){
+
+    public void maximizeWindow() {
         driver.manage().window().maximize();
     }
-    public void enterUrl(){
+
+    public void enterUrl() {
         driver.get(url);
     }
-    public void globalWait(){
+
+    public void globalWait() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     }
 

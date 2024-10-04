@@ -1,9 +1,6 @@
 package utils;
 
-import PageClasses.ForgetPasswordPage;
-import PageClasses.PreLoginPage;
-import PageClasses.SignUpPage;
-import PageClasses.VendorLoginPage;
+import PageClasses.*;
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {
@@ -17,6 +14,7 @@ public class PageObjectManager {
     public VendorLoginPage vendorLoginPage;
     public SignUpPage signUpPage;
     public ForgetPasswordPage forgetPasswordPage;
+    public HomePage homePage;
 
     public PreLoginPage preLoginPage() {
         if (preLoginPage == null) {
@@ -44,5 +42,12 @@ public class PageObjectManager {
             forgetPasswordPage = new ForgetPasswordPage(_driver);
         }
         return forgetPasswordPage;
+    }
+
+    public HomePage homePage(){
+        if(homePage == null){
+            homePage= new HomePage(_driver);
+        }
+        return homePage;
     }
 }
