@@ -48,6 +48,9 @@ public class HomePage extends WebUtils implements HomePageLoc {
 
     public void clickOnIntroductionModule() {
         click(crossbtn, "close pop up");
-//        clickUsingJavaScript(getIntroduction());
+        clickUsingJavaScript(introductionCard);
+    }
+    public void clickPurchaseID(){
+        click(linkPurchaseID, "Purchase ID");
     }
 }

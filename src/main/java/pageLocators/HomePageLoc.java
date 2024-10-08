@@ -60,6 +60,7 @@ public interface HomePageLoc {
     By last7daysTxt = By.xpath("//p[text()='Last 7 days']");
     By malaysiaLogoIcon = By.xpath("//img[@class='logo me-3']");
     By magpLogoIcon = By.xpath("(//img[contains(@class,'logo-small')])[1]");
+    By linkPurchaseID = By.xpath("//a[text()='Purchase ID']");
 
 
 }

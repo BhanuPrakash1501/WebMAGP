@@ -15,6 +15,7 @@ public class PageObjectManager {
     public SignUpPage signUpPage;
     public ForgetPasswordPage forgetPasswordPage;
     public HomePage homePage;
+    public IntroductionPage introductionPage;
 
     public PreLoginPage preLoginPage() {
         if (preLoginPage == null) {
@@ -49,5 +50,11 @@ public class PageObjectManager {
             homePage= new HomePage(_driver);
         }
         return homePage;
+    }
+    public IntroductionPage introductionPage(){
+        if(introductionPage == null){
+            introductionPage =  new IntroductionPage(_driver);
+        }
+        return introductionPage;
     }
 }

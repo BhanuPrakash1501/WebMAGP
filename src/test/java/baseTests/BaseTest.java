@@ -57,7 +57,7 @@ public class BaseTest {
         pm = new PageObjectManager(driver);
     }
 
-    @AfterMethod
+//    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

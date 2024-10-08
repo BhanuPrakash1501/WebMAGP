@@ -97,6 +97,12 @@ public class WebUtils extends CommonFunctions{
         js.executeScript("arguments[0].scrollIntoView();", ele);
 
     }
+    public void clickUsingJavaScript(By loc){
+        WebElement ele = _driver.findElement(loc);
+        JavascriptExecutor js =(JavascriptExecutor)_driver;
+        js.executeScript("arguments[0].click();",ele);
+
+    }
 
 
 
