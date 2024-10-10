@@ -16,6 +16,8 @@ public class PageObjectManager {
     public ForgetPasswordPage forgetPasswordPage;
     public HomePage homePage;
     public IntroductionPage introductionPage;
+    public StaffLoginPage staffLoginPage;
+    public FavouritesPage favouritesPage;
 
     public PreLoginPage preLoginPage() {
         if (preLoginPage == null) {
@@ -56,5 +58,18 @@ public class PageObjectManager {
             introductionPage =  new IntroductionPage(_driver);
         }
         return introductionPage;
+    }
+
+    public StaffLoginPage StaffLoginPage(){
+        if (staffLoginPage == null){
+            staffLoginPage= new StaffLoginPage(_driver);
+        }
+        return staffLoginPage;
+    }
+    public FavouritesPage FavouritesPage(){
+        if (favouritesPage  == null){
+            favouritesPage = new FavouritesPage(_driver);
+        }
+        return favouritesPage;
     }
 }
