@@ -27,6 +27,10 @@ public class WebUtils extends CommonFunctions{
         System.out.println(name + " element is clicked");
     }
 
+    public void clearTxt(By loc){
+        _driver.findElement(loc).clear();
+    }
+
     public void elementSendKeys(By loc, String val) {
         WebElement ele = _driver.findElement(loc);
         ele.sendKeys(val);

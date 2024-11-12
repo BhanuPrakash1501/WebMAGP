@@ -17,5 +17,6 @@ public interface VendorLoginPageLoc {
     By dontHaveAnAccountTxt = By.xpath("//h5[contains(.,'Procurement')]");
     By pleaseEnterValidEmailAddressTxt = By.xpath("//div[text()='Please enter a valid email address']");
     By loginHeaderTxt = By.xpath("//h2[text()='Login']");
+    By btnX = By.xpath("//div[@class='position-absolute close-icon']//button");
 
 }

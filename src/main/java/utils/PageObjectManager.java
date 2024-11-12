@@ -18,6 +18,7 @@ public class PageObjectManager {
     public IntroductionPage introductionPage;
     public StaffLoginPage staffLoginPage;
     public FavouritesPage favouritesPage;
+    public ProfilePage profilePage;
 
     public PreLoginPage preLoginPage() {
         if (preLoginPage == null) {
@@ -60,7 +61,7 @@ public class PageObjectManager {
         return introductionPage;
     }
 
-    public StaffLoginPage StaffLoginPage(){
+    public StaffLoginPage staffLoginPage(){
         if (staffLoginPage == null){
             staffLoginPage= new StaffLoginPage(_driver);
         }
@@ -71,5 +72,13 @@ public class PageObjectManager {
             favouritesPage = new FavouritesPage(_driver);
         }
         return favouritesPage;
+    }
+
+    public ProfilePage profilePage(){
+        if(profilePage == null){
+            profilePage = new ProfilePage(_driver);
+        }
+        return profilePage;
+
     }
 }

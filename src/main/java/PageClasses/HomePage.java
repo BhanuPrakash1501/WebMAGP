@@ -14,7 +14,6 @@ public class HomePage extends WebUtils implements HomePageLoc {
     }
 
     public void verifyWelcomeToMagpTxt() {
-        click(crossbtn, "close popup");
         String welcomeToMagptxt = elementGetText(welcomeToMagpTxt);
         Assert.assertEquals(welcomeToMagptxt, "Welcome to MAGP");
     }

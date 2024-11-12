@@ -48,6 +48,7 @@ public class VendorLoginPage extends WebUtils implements VendorLoginPageLoc {
         elementSendKeys(emailAddressField, email);
         elementSendKeys(passwordField, pass);
         click(submitbtn, "Submit");
+
     }
 
     public void verifyWelcomeTxt() {
@@ -91,6 +92,15 @@ public class VendorLoginPage extends WebUtils implements VendorLoginPageLoc {
         elementSendKeys(emailAddressField, "gdssd");
         String emailErrorTxt = _driver.findElement(pleaseEnterValidEmailAddressTxt).getText();
         Assert.assertEquals(emailErrorTxt, "Please enter a valid email address");
+    }
+
+    public void xbutton(){
+        click(btnX, "crossbutton");
+    }
+
+    public void googleLogin(){
+        click(googleBtn, "google login");
+
     }
 
 

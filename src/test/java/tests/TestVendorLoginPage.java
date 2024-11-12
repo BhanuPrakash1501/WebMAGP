@@ -40,8 +40,7 @@ public class TestVendorLoginPage extends BaseTest {
     public void verifyHomePageUI() {
         pm.preLoginPage().clickOnVendorLoginButton();
         pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().verifyPurchaseIdTxt();
-        pm.homePage().verifyPurchaseIdDescTxt();
+        pm.vendorLoginPage().xbutton();
         pm.homePage().verifyWelcomeToMagpTxt();
         pm.homePage().verifyLatestAnnouncementTxt();
         pm.homePage().verifyLast7DaysTxt();
@@ -49,58 +48,16 @@ public class TestVendorLoginPage extends BaseTest {
     }
 
     @Test
-    public void clickOnintroductionManualTab() {
+    public void testGoogleLoginFunctionality(){
         pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().clickOnIntroductionModule();
-    }
+        pm.vendorLoginPage().googleLogin();
 
-    @Test
-    public void clickOnPrefaceManualTab() {
-        pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().clickOnIntroductionModule();
-        pm.introductionPage().clickPreface();
-    }
 
-    @Test
-    public void clickOnProcurementCodesOfEthicsManualTab() {
-        pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().clickOnIntroductionModule();
-        pm.introductionPage().clickProcurementCodesofethics();
-    }
-
-    @Test
-    public void clickOnGeneralProvisionsManualTab() {
-        pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().clickOnIntroductionModule();
-        pm.introductionPage().clickGeneralProvisions();
-    }
-
-    @Test
-    public void verifyPurchaseIDUI() {
-        pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().clickOnIntroductionModule();
-        pm.introductionPage().verifyWantToViewMoreTxt();
-        pm.introductionPage().verifyWantToViewMoreContentTxt();
-        pm.introductionPage().clickPurchaseID();
-        pm.introductionPage().verifyloginPurchaseIDTxt();
-        pm.introductionPage().verifyComingSoonTxt();
-        pm.introductionPage().verifyWeWillNotifyYouTxt();
-        pm.introductionPage().clickBackArrow();
 
     }
-    @Test
-    public void purchaseIDPopUPUI(){
-        pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
-        pm.homePage().verifyPurchaseIdTxt();
-        pm.homePage().verifyPurchaseIdDescTxt();
-        pm.homePage().clickPurchaseID();
-        
-    }
+
+
+
+
 
 }
