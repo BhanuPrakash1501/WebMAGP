@@ -17,6 +17,7 @@ public class WebUtils extends CommonFunctions{
 
 
     public WebUtils(WebDriver driver) {
+
         this._driver = driver;
     }
 

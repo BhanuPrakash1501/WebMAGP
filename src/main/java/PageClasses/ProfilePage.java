@@ -8,22 +8,23 @@ public class ProfilePage extends WebUtils implements ProfilePageLoc {
     private WebDriver _driver;
 
     public ProfilePage(WebDriver driver) {
-        super(driver);
-        this._driver = driver;
+        super(driver);// Initializes the WebUtils page with the driver
+        this._driver = driver;// Sets the driver instance for ProfilePage
     }
 
-    public void clickProfileBtn(){
-        click(btnProfile,"profile");
+    public void clickProfileBtn() {
+        click(btnProfile, "profile");
     }
-    public void needToPurchaseTxt(){
+
+    public void needToPurchaseTxt() {
         elementGetText(txtNeedToPurchase);
     }
 
-    public void clickEditProfileBtn(){
-        click(btnEditProfile,"Edit profile");
+    public void clickEditProfileBtn() {
+        click(btnEditProfile, "Edit profile");
     }
 
-    public void enterValuesEditProfile()  {
+    public void enterValuesEditProfile() {
         clearTxt(firstNameField);
         _driver.findElement(firstNameField).sendKeys(randomString(4));
         clearTxt(mobileNumberField);
@@ -36,12 +37,12 @@ public class ProfilePage extends WebUtils implements ProfilePageLoc {
         _driver.findElement(streetCityAddressField).sendKeys(randomString(5));
         clearTxt(postcodeField);
         _driver.findElement(postcodeField).sendKeys(randomNumber(6));
-        click(btnSave,"save");
+        click(btnSave, "save");
 
 
     }
 
-    public void clickXbuttonEditProfile(){
-        click(btnXEditProPopUp,"cross button");
+    public void clickXbuttonEditProfile() {
+        click(btnXEditProPopUp, "cross button");
     }
 }

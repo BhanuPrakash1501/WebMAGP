@@ -7,6 +7,7 @@ public class PageObjectManager {
     public WebDriver _driver;
 
     public PageObjectManager(WebDriver driver) {
+
         this._driver = driver;
     }
 

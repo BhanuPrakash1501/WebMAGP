@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="5">
+    <test verbose="2" preserve-order="true" name="Chrome browser">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="url" value="https://magp-nprod-fe.myairports.com.my/auth"/>
+        <classes>
+<!--            <class name="tests.TestFavouritesPage"/>-->
+<!--            <class name="tests.TestForgetPasswordPage"/>-->
+            <class name="tests.TestPreLoginPage"/>
+            <class name="tests.TestProfilePage"/>
+<!--            <class name="tests.TestSignUpPage"/>-->
+<!--            <class name="tests.TestStaffLoginPage"/>-->
+<!--            <class name="tests.TestVendorLoginPage"/>-->
+
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Edge Browser">
+        <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://magp-nprod-fe.myairports.com.my/auth"/>
+        <classes>
+            <!--            <class name="tests.TestFavouritesPage"/>-->
+            <!--            <class name="tests.TestForgetPasswordPage"/>-->
+            <class name="tests.TestPreLoginPage"/>
+            <class name="tests.TestProfilePage"/>
+            <!--            <class name="tests.TestSignUpPage"/>-->
+            <!--            <class name="tests.TestStaffLoginPage"/>-->
+            <!--            <class name="tests.TestVendorLoginPage"/>-->
+
+        </classes>
+    </test>
+
+</suite>

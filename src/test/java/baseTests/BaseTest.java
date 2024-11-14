@@ -14,8 +14,9 @@ import java.util.Properties;
 public class BaseTest {
     protected WebDriver driver;
     public PageObjectManager pm;
-    private String url;
     private String browser;
+    private String url;
+
 
     public void lunchBrowser() {
         try {
@@ -33,8 +34,38 @@ public class BaseTest {
                 driver = new EdgeDriver();
         } catch (Exception ignored) {
 
+
         }
     }
+
+/*@BeforeMethod
+@Parameters({"browser","url"})
+public void setUp(String br,String link) {
+
+    switch (br.toLowerCase()) {
+        case "chrome":
+            driver = new ChromeDriver();
+            break;
+        case "edge":
+            driver = new EdgeDriver();
+            break;
+        case "Firefox":
+            driver = new FirefoxDriver();
+            break;
+        default:
+            System.out.println("invalid broswer");
+            return;
+
+
+    }
+    driver.manage().window().maximize();
+    driver.get(link);
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+    pm = new PageObjectManager(driver);
+
+
+}*/
+
 
     public void maximizeWindow() {
         driver.manage().window().maximize();
@@ -57,7 +88,7 @@ public class BaseTest {
         pm = new PageObjectManager(driver);
     }
 
-//    @AfterMethod
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();
