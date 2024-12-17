@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 public class TestPreLoginPage extends BaseTest {
 
+    //prelogin
     @Test
     public void testProLoginPageUI(){
         pm.preLoginPage().verifyPreLoginPage();
