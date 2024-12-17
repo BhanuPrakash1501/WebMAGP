@@ -5,19 +5,34 @@
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://magp-nprod-fe.myairports.com.my/auth"/>
         <classes>
-<!--            <class name="tests.TestFavouritesPage"/>-->
-<!--            <class name="tests.TestForgetPasswordPage"/>-->
+            <!--            <class name="tests.TestFavouritesPage"/>-->
+            <!--            <class name="tests.TestForgetPasswordPage"/>-->
             <class name="tests.TestPreLoginPage"/>
             <class name="tests.TestProfilePage"/>
-<!--            <class name="tests.TestSignUpPage"/>-->
-<!--            <class name="tests.TestStaffLoginPage"/>-->
-<!--            <class name="tests.TestVendorLoginPage"/>-->
+            <!--            <class name="tests.TestSignUpPage"/>-->
+            <!--            <class name="tests.TestStaffLoginPage"/>-->
+            <!--            <class name="tests.TestVendorLoginPage"/>-->
 
         </classes>
     </test>
 
     <test verbose="2" preserve-order="true" name="Edge Browser">
         <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://magp-nprod-fe.myairports.com.my/auth"/>
+        <classes>
+            <!--            <class name="tests.TestFavouritesPage"/>-->
+            <!--            <class name="tests.TestForgetPasswordPage"/>-->
+            <class name="tests.TestPreLoginPage"/>
+            <class name="tests.TestProfilePage"/>
+            <!--            <class name="tests.TestSignUpPage"/>-->
+            <!--            <class name="tests.TestStaffLoginPage"/>-->
+            <!--            <class name="tests.TestVendorLoginPage"/>-->
+
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="FireFox Browser">
+        <parameter name="browser" value="firefox"/>
         <parameter name="url" value="https://magp-nprod-fe.myairports.com.my/auth"/>
         <classes>
             <!--            <class name="tests.TestFavouritesPage"/>-->

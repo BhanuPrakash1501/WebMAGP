@@ -49,7 +49,7 @@ public void setUp(String br,String link) {
         case "edge":
             driver = new EdgeDriver();
             break;
-        case "Firefox":
+        case "firefox":
             driver = new FirefoxDriver();
             break;
         default:
@@ -64,7 +64,9 @@ public void setUp(String br,String link) {
     pm = new PageObjectManager(driver);
 
 
-}*/
+}
+
+ */
 
 
     public void maximizeWindow() {

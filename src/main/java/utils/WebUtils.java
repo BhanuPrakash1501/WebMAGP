@@ -12,7 +12,7 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.Set;
 
-public class WebUtils extends CommonFunctions{
+public class WebUtils {
     private WebDriver _driver;
 
 

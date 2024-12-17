@@ -8,7 +8,7 @@ public class TestProfilePage extends BaseTest {
     @Test
     public void testProfilePage() {
         pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
+        pm.vendorLoginPage().performLogin("xixoja1991@craftapk.com", "Test@123");
         pm.vendorLoginPage().xbutton();
         pm.profilePage().clickProfileBtn();
     }
@@ -16,7 +16,7 @@ public class TestProfilePage extends BaseTest {
     @Test
     public void testEditProfileFields() {
         pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
+        pm.vendorLoginPage().performLogin("xixoja1991@craftapk.com", "Test@123");
         pm.vendorLoginPage().xbutton();
         pm.profilePage().clickProfileBtn();
         pm.profilePage().clickEditProfileBtn();
@@ -27,7 +27,7 @@ public class TestProfilePage extends BaseTest {
     @Test
     public void testXbuttonEditProfile() {
         pm.preLoginPage().clickOnVendorLoginButton();
-        pm.vendorLoginPage().performLogin("palepu.jk@gmail.com", "Test@123456");
+        pm.vendorLoginPage().performLogin("xixoja1991@craftapk.com", "Test@123");
         pm.vendorLoginPage().xbutton();
         pm.profilePage().clickProfileBtn();
         pm.profilePage().clickEditProfileBtn();
